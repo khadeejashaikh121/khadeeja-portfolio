@@ -1,0 +1,116 @@
+---
+import { siteConfig } from "../config";
+const hasVolunteering = siteConfig.volunteering && siteConfig.volunteering.length > 0;
+---
+
+{
+  hasVolunteering && (
+    <section id="volunteering" class="p-8 sm:p-12 md:p-16 lg:p-24">
+      <div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+          <div class="lg:col-span-4">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+              Volunteering
+            </h2>
+            <div
+              class="w-[75px] h-[5px] mt-2 rounded-full"
+              style={`background-color: ${siteConfig.accentColor}`}
+            />
+          </div>
+
+          <div class="lg:col-span-8">
+            <div class="relative">
+              {siteConfig.volunteering.map((vol, index) => {
+                const Component = vol.link ? "a" : "div";
+                const linkProps = vol.link
+                  ? {
+                      href: vol.link,
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                    }
+                  : {};
+
+                return (
+                  <div class="relative mb-12 last:mb-0 group">
+                    {/* Timeline dot at top of card */}
+                    <div
+                      class="absolute left-1/2 -top-2 w-4 h-4 bg-white border-2 rounded-full -translate-x-1/2 z-20 transition-all duration-300"
+                      style={`border-color: ${siteConfig.accentColor}; background-color: ${siteConfig.accentColor}`}
+                    />
+
+                    {/* Connecting line below card */}
+                    {index < siteConfig.volunteering.length - 1 && (
+                      <div class="absolute left-1/2 bottom-0 w-0.5 h-12 bg-gray-300 -translate-x-1/2 translate-y-full z-10" />
+                    )}
+
+                    {/* Volunteering card */}
+                    <Component
+                      {...linkProps}
+                      class={`block bg-white rounded-lg shadow-sm border border-gray-100 p-4 sm:p-5 md:p-6 transition-all duration-300 ${
+                        vol.link
+                          ? "hover:shadow-md hover:border-gray-300 hover:-translate-y-1 cursor-pointer"
+                          : ""
+                      }`}
+                    >
+                      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
+                        <div class="flex-1">
+                          <h3 class="text-lg sm:text-xl font-semibold text-gray-900">
+                            {vol.title}
+                          </h3>
+                          <p
+                            class="text-base sm:text-lg"
+                            style={`color: ${siteConfig.accentColor}`}
+                          >
+                            {vol.organization}
+                          </p>
+                        </div>
+                        {vol.link && (
+                          <div class="mt-2 sm:mt-0 sm:ml-4">
+                            <svg
+                              class="w-5 h-5 text-gray-400 transition-all duration-300 group-hover:text-gray-600 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                              />
+                            </svg>
+                          </div>
+                        )}
+                      </div>
+
+                      <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4">
+                        <span class="text-xs sm:text-sm text-gray-500">
+                          {vol.dateRange}
+                        </span>
+                        <span class="hidden sm:inline text-gray-300">•</span>
+                        <span class="text-xs sm:text-sm text-gray-600 font-medium">
+                          {vol.category}
+                        </span>
+                      </div>
+
+                      <ul class="space-y-2">
+                        {vol.bullets.map((bullet) => (
+                          <li class="flex items-start">
+                            <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0" />
+                            <span class="text-sm sm:text-base text-gray-600">
+                              {bullet}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </Component>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
