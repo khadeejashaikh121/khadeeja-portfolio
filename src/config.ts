@@ -50,7 +50,7 @@ export const siteConfig = {
     {
       company: "Teach for India (North Region)",
       title: "Campus Ambassador",
-      dateRange: "Jan 2025 - Present",
+      dateRange: "Aug 2025 - Present",
       bullets: [
         "Acted as the primary point of contact between Teach for India and university students",
         "Guided candidates through fellowship applications, timelines, and selection stages",
@@ -61,7 +61,7 @@ export const siteConfig = {
     {
       company: "Teach for India",
       title: "Recruitment Intern (HR)",
-      dateRange: "Jan 2025 - Apr 2025",
+      dateRange: "Feb 2025 - May 2025",
       bullets: [
         "Supported HR and recruitment operations across multiple college outreach programs",
         "Assisted in candidate shortlisting, follow-ups, and maintaining recruitment data",
@@ -72,7 +72,7 @@ export const siteConfig = {
     {
       company: "Local School, New Delhi",
       title: "Teacher (Part-Time)",
-      dateRange: "Oct 2024 - Feb 2025",
+      dateRange: "Sep 2024 - Feb 2025",
       bullets: [
         "Managed classroom operations while balancing academic responsibilities",
         "Demonstrated leadership, conflict handling, and structured communication",
@@ -82,7 +82,7 @@ export const siteConfig = {
     {
       company: "Teach for India",
       title: "Volunteer Teacher",
-      dateRange: "Dec 2022 - Mar 2022",
+      dateRange: "Sep 2024 - Feb 2025",
       bullets: [
         "Mentored Grade 10 students in English and History at a government school",
         "Developed empathy, adaptability, and stakeholder engagement skills",
