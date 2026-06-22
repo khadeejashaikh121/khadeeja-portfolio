@@ -48,6 +48,16 @@ export const siteConfig = {
   ],
   experience: [
     {
+      company: "Prescient Health Group",
+      title: "HR Intern",
+      dateRange: "Feb 2026 - April 2026",
+      bullets: [
+        "Formulated and refined organizational HR policies, leveraging AI tools to enhance clarity, compliance, and procedural efficiency.",
+        "Supported end-to-end talent acquisition efforts by sourcing candidates, screening resumes, and coordinating interview schedules to meet hiring needs.",
+        "Assisted in general HR management and operations, ensuring the seamless execution of administrative workflows and employee engagement initiatives.",
+      ],
+    },
+    {
       company: "Teach for India (North Region)",
       title: "Campus Ambassador",
       dateRange: "Aug 2025 - Present",
