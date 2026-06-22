@@ -113,7 +113,7 @@ export const siteConfig = {
     {
       school: "Jamia Hamdard University, New Delhi",
       degree: "B.A. International Studies and Global Politics",
-      dateRange: "2024 - Present",
+      dateRange: "2023 - Present",
       achievements: [
         "Event Management Board Member, Tezos Jamia Hamdard",
         "Active member of UBA Society and Aawaz Media & Drama Club",
