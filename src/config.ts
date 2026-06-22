@@ -86,7 +86,7 @@ export const siteConfig = {
       bullets: [
        "Supported classroom teaching through interactive lessons and student engagement.",
         "Assisted in lesson planning and basic assessments to track learning progress.",
-        "Mentored students individually to improve academic understanding and confidence."
+        "Mentored students individually to improve academic understanding and confidence.",
         "Helped create an inclusive, supportive classroom environment.",
       ],
     },
