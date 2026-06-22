@@ -101,9 +101,21 @@ export const siteConfig = {
       ],
     },
     {
+      company: "Kurniv foundation (Pehchan project)",
+      title: "Outreach & Engagement Coordinator",
+      dateRange: "Feb 2022 - Aug 2022",
+      bullets: [
+        "•Identity & Self-Worth Facilitation: Delivered interactive sessions for the Pehchan initiative, guiding youth to discover their unique potential, build core self-worth, and develop critical life skills.",
+        "Cross-Cultural Bridge Building: Facilitated deliberate peer-to-peer engagement that brought together youth from diverse socioeconomic, religious, and caste backgrounds, helping dismantle deep-seated cultural biases.",
+        "Empathy-Driven Mentorship: Cultivated a safe, inclusive environment that encouraged mutual understanding and long-term camaraderie, directly contributing to breaking generational cycles of social division.",
+        "Grassroots Outreach & Mobilization: Conducted targeted community outreach across Maharashtra to identify, engage, and onboard young participants into the Pehchan program.",
+        "Program Execution & Collaboration: Partnered with trustees and volunteer cohorts to manage ground-level logistics, track participant growth, and refine session delivery for maximum social impact.",
+      ],
+    },
+        {
       company: "Teach for India",
       title: "Volunteer Teacher",
-      dateRange: "Feb 2022 April 2022",
+      dateRange: "Feb 2022 - April 2022",
       bullets: [
         "Mentored Grade 10 students in English and History at a government school",
         "Developed empathy, adaptability, and stakeholder engagement skills",
