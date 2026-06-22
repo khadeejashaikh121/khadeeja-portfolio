@@ -101,6 +101,15 @@ export const siteConfig = {
       ],
     },
     {
+      company: "Teach for India",
+      title: "Volunteer Teacher",
+      dateRange: "Feb 2022 April 2022",
+      bullets: [
+        "Mentored Grade 10 students in English and History at a government school",
+        "Developed empathy, adaptability, and stakeholder engagement skills",
+      ],
+    },
+    {
       company: "Claylab Educational Foundation",
       title: "Talk Show Host",
       dateRange: "Jan 2022 - Feb 2022",
