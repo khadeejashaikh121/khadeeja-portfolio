@@ -84,8 +84,10 @@ export const siteConfig = {
       title: "Volunteer Teacher",
       dateRange: "Sep 2024 - Feb 2025",
       bullets: [
-        "Mentored Grade 10 students in English and History at a government school",
-        "Developed empathy, adaptability, and stakeholder engagement skills",
+       "Supported classroom teaching through interactive lessons and student engagement.",
+        "Assisted in lesson planning and basic assessments to track learning progress.",
+        "Mentored students individually to improve academic understanding and confidence."
+        "Helped create an inclusive, supportive classroom environment.",
       ],
     },
     {
