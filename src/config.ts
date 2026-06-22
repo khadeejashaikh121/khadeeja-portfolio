@@ -139,7 +139,7 @@ export const siteConfig = {
     },
     {
       organization: "Unnat Bharat Abhiyan JH",
-      title: "Event Management Specialist",
+      title: "HR and Event Management Specialist",
       dateRange: "Aug 2025 - Present",
       category: "Civil Rights and Social Action",
       link: "https://www.linkedin.com/company/unnat-bharat-abhiyan-jh",
